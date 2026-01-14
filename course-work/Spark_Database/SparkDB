@@ -65,7 +65,6 @@ CREATE TABLE Rental (
     EndLocation NVARCHAR(100),
     DistanceDriven FLOAT,
     FinalPrice DECIMAL(10,2),
-    PaymentStatus NVARCHAR(20),
     UserID INT NOT NULL,
     VehicleID INT NOT NULL,
     FOREIGN KEY (UserID) REFERENCES [User](UserID),
